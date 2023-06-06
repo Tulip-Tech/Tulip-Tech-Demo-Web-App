@@ -1,0 +1,91 @@
+@use 'src/styles/variables';
+@use 'src/styles/theme';
+@use 'src/styles/mixins/responsive';
+.layout {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
+div.footer {
+    padding: 4% 1% 0% 1%;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.14), 0 3px 4px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.2);
+
+    > div > a,
+    a:visited,
+    a:active,
+    a:hover {
+        color: variables.$white;
+        text-decoration: none;
+    }
+}
+
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(variables.$white, 0.12);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 variables.$base-spacing;
+
+    > button:first-child {
+        margin-bottom: calc(#{variables.$base-spacing} / 2);
+    }
+}
+.footerContent {
+    display: flex;
+    width: 40%;
+    padding: 5% 2% 0% 2%;
+    @include responsive.mobile-only() {
+        width: 90%;
+        font-size: 10px;
+    }
+
+    @include responsive.tablet-only() {
+        width: 60%;
+        font-size: 10px;
+    }
+}
+
+.link {
+    padding: 3% 7%;
+    color: variables.$white;
+    font-family: var(--body-alt-font-family);
+}
+
+.linkSection {
+    display: grid;
+    width: 33.33%;
+}
+.bookbtn {
+    color: variables.$white;
+}
+.Header {
+    display: flex;
+}
+.headerShopButton {
+    padding: 0 20px;
+    color: variables.$white;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: var(--highlight-color, #29abe2);
+}
+.headerShopButton:hover {
+    padding: 0 20px;
+    color: variables.$white;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: underline;
+    background-color: var(--highlight-color, #29abe2);
+}

@@ -1,0 +1,176 @@
+@use 'src/styles/variables';
+@use 'src/styles/theme';
+@use 'src/styles/mixins/responsive';
+@use 'src/styles/mixins/utils';
+
+//
+// Header
+// --------------------------------
+
+.header {
+  height: 50px;
+  padding: 10px variables.$base-spacing * 4;
+  color: var(--header-contrast-color, variables.$white);
+  background: var(--header-background, transparent);
+
+  //
+  // Make header fixed
+  //
+  &.fixed {
+    position: fixed;
+    z-index: variables.$header-z-index;
+    width: 100%;
+  }
+
+  //
+  // Make header static
+  //
+  &.static {
+    position: static;
+    width: 100%;
+  }
+}
+
+//
+// Header container
+//
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+//
+// Header menu
+//
+.menu {
+  display: none;
+}
+
+//
+// Header menu
+//
+.iconButton {
+  width: 36px;
+  height: 36px;
+
+  > svg {
+    fill: currentColor;
+  }
+}
+
+//
+// Header brand
+//
+.brand {
+  align-self: center;
+}
+
+//
+// Header navigation
+//
+.nav {
+  display: inline-block;
+  flex: 1;
+  align-items: center;
+
+  > a {
+    height: 36px;
+    min-height: 36px;
+    margin: 0 6px;
+    font-weight: var(--body-font-weight-bold);
+    font-size: 18px;
+  }
+}
+
+//
+// Header search
+//
+.search {
+  max-width: 180px;
+}
+
+//
+// Header mobile search
+//
+.mobileSearch {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+
+  > div:first-child {
+    flex: 1;
+  }
+}
+
+//
+// Header modifier when mobile search is active
+//
+.mobileSearchActive {
+  .menu,
+  .brand {
+    display: none;
+  }
+}
+
+.buttonContainer {
+  > button:first-child {
+    margin-right: calc(#{variables.$base-spacing} / 2);
+    margin-left: variables.$base-spacing;
+  }
+}
+
+.userMenuButton {
+  margin-left: 8px;
+}
+
+.brandCentered {
+  .brand {
+    text-align: center;
+  }
+}
+//
+// mediaQueries
+// --------------------------------
+
+@include responsive.mobile-and-tablet() {
+  .header {
+    height: variables.$header-height-mobile;
+    padding: 10px variables.$base-spacing * 2;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .brand {
+    flex: 1;
+    margin: 0;
+    margin-left: 8px;
+    text-align: left;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .search {
+    text-align: right;
+  }
+}
+
+@include responsive.mobile-only() {
+  .header {
+    padding: 10px variables.$base-spacing;
+  }
+
+  .menu {
+    width: 40px;
+  }
+
+  .search {
+    width: 40px;
+  }
+}

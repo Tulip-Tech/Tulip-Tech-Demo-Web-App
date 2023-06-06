@@ -1,0 +1,22 @@
+@use 'src/styles/variables';
+@use 'src/styles/theme';
+@use 'src/styles/mixins/responsive';
+
+.thankYouPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-top: 1px solid variables.$white;
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  p {
+    color: variables.$gray;
+    font-size: 1.5rem;
+  }
+}

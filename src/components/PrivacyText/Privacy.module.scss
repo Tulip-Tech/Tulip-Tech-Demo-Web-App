@@ -1,0 +1,27 @@
+@use 'src/styles/variables';
+@use 'src/styles/theme';
+@use 'src/styles/mixins/responsive';
+
+.privacy {
+  padding: 1% 15% 3% 15%;
+
+  color: variables.$white;
+  line-height: 30px;
+  text-align: left;
+}
+h2 {
+  padding-top: 1%;
+  font-weight: 600;
+  font-size: larger;
+  text-align: center;
+}
+h3 {
+  padding-top: 1%;
+  font-weight: 600;
+  font-size: large;
+  text-align: left;
+}
+
+.privacyLink {
+  color: theme.$link-color;
+}

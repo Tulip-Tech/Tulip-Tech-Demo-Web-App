@@ -1,0 +1,106 @@
+@use 'src/styles/variables';
+@use 'src/styles/theme';
+@use 'src/styles/mixins/responsive';
+
+.carouselItemDescription {
+  top: 0;
+  z-index: variables.$view-z-index;
+  display: block !important;
+  height: 100%;
+  padding: 13% 51% 14% 11%;
+  text-align: left;
+  // background: linear-gradient(90deg, #001835 0%, rgba(0, 24, 53, 0) 76.9%);
+  @include responsive.mobile-only() {
+    // position: absolute;
+    top: 0;
+    z-index: variables.$view-z-index;
+    height: 100%;
+    padding: 40% 20% 14% 5%;
+    line-height: 13px;
+    text-align: left;
+    // background: linear-gradient(90deg, #001835 0%, rgba(0, 24, 53, 0) 76.9%);
+  }
+
+  @include responsive.tablet-only() {
+    // position: absolute;
+    top: 0;
+    z-index: variables.$view-z-index;
+    height: 100%;
+    padding: 10% 50% 14% 6%;
+    line-height: 13px;
+    text-align: left;
+  }
+}
+
+.carouselItemHeading {
+  padding: 5% 0;
+  font-weight: 600;
+  font-size: 50px;
+
+  line-height: 57px;
+  @include responsive.mobile-only() {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  @include responsive.tablet-only() {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+.carouselItemDetails {
+  @include responsive.mobile-only() {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @include responsive.tablet-only() {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.watchNowButton {
+  justify-content: center !important ;
+  width: 370px !important;
+  height: 110px !important;
+  margin: 30px 0 !important;
+  padding: 20px 25px !important;
+  font-size: 32px !important;
+  background-color: theme.$watch-now !important;
+  border: 1px solid variables.$white !important;
+  border-radius: 35px;
+  @include responsive.mobile-only() {
+    width: 130px !important;
+    height: 50px !important;
+    margin: 20px 0 0 0 !important;
+    padding: 13px 50px !important;
+    font-size: 14px !important;
+    white-space: nowrap;
+  }
+
+  @include responsive.tablet-only() {
+    width: 200px !important;
+    height: 65px !important;
+    margin: 15px 0 !important;
+    padding: 13px 50px !important;
+    font-size: 18px !important;
+    white-space: nowrap;
+  }
+}
+.featuredBg {
+  background-image: url('/images/landingPageFeatured.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include responsive.mobile-only() {
+    padding: 0 0 60% 0;
+    background-image: url('/images/featuredMobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+section span {
+  display: block;
+  /* transform: translateX(-100px); */
+  opacity: 0;
+}

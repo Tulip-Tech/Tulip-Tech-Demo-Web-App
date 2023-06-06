@@ -1,0 +1,19 @@
+# project, build, and deployment
+node_modules
+build
+.snowpack
+coverage
+output
+src/i18n/locales/**/*_old.json
+yarn-error.log
+.firebase
+firebase-debug.log
+.stylelintcache
+
+# os or editor
+.idea
+.DS_Store
+.vscode/
+
+# ignore local files
+*.local

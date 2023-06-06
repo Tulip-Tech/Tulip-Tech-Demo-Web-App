@@ -1,0 +1,87 @@
+@use 'src/styles/variables';
+@use 'src/styles/theme';
+@use 'src/styles/mixins/responsive';
+.header {
+  position: absolute;
+  z-index: variables.$epg-z-index;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 25% 20px 15%;
+
+  font-size: 15px !important;
+  @include responsive.mobile-only() {
+    position: absolute;
+    top: 0;
+    z-index: variables.$view-z-index;
+    // height: 100%;
+    display: table-row-group;
+    padding: 10px 0;
+    font-size: 6px;
+    line-height: 13px;
+    text-align: left;
+  }
+
+  @include responsive.tablet-only() {
+    position: absolute;
+    top: 0;
+    z-index: variables.$view-z-index;
+    // height: 100%;
+    padding: 24px 0 0 5px;
+    font-size: 12px;
+
+    line-height: 13px;
+    text-align: left;
+  }
+}
+.gameInFrameLogo {
+  width: 165px;
+  @include responsive.mobile-only() {
+    width: 100px;
+    padding: 10px 0;
+  }
+
+  @include responsive.tablet-only() {
+    width: 75px;
+  }
+}
+.headerButtonsSection {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+
+  // margin: -4px 90px 0 0;
+  gap: 35px;
+  @include responsive.mobile-only() {
+    gap: 5px !important;
+    font-size: 8px !important;
+  }
+  @include responsive.tablet-only() {
+    font-size: 11px !important;
+  }
+}
+.link {
+  align-self: center !important;
+  padding: 5px 0;
+  color: variables.$white;
+  font-weight: 100 !important;
+  text-decoration: none;
+
+  @include responsive.mobile-only() {
+    padding: 10px 5px;
+    font-size: 12px !important;
+    white-space: nowrap;
+  }
+  @include responsive.tablet-only() {
+    font-size: 11px !important;
+  }
+}
+.link:hover {
+  padding: 5px 0;
+  color: theme.$link-color;
+  font-weight: 100 !important;
+  text-decoration: none !important;
+}
+.logoContainer {
+  text-align: center;
+}

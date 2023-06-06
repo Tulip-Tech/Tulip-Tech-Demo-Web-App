@@ -1,0 +1,113 @@
+@use 'src/styles/variables';
+@use 'src/styles/theme';
+@use 'src/styles/mixins/responsive';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    height: 50px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: variables.$input-formBG;
+    border: 1px solid #00000081;
+
+    &:focus {
+      border-color: variables.$blue;
+      outline: none;
+    }
+  }
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    // color:variables.$white-formBG ; /* Firefox */
+    opacity: 0.35;
+  }
+  .message {
+    height: 150px;
+    background-color: variables.$input-formBG;
+    border: 1px solid #00000081;
+  }
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .error {
+    color: variables.$red;
+    font-size: 0.875rem;
+  }
+
+  button[type='submit'] {
+    margin-right: 0 !important;
+    padding: 1rem;
+    color: variables.$white;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: var(--body-background-color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    &:hover {
+      background-color: variables.$blue;
+    }
+  }
+}
+.PlayerHighlightStream {
+  margin: 100px 0 0 0;
+  background-image: url('/images/highlights.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top: 2px solid variables.$white;
+  border-bottom: 2px solid variables.$white;
+
+  @include responsive.mobile-only() {
+    margin: 15% 0;
+    // padding: 20px 25px variables.$base-spacing;
+  }
+  @include responsive.tablet-only() {
+    margin: 10% 0;
+  }
+}
+
+.formContainer {
+  position: relative;
+  top: 10%;
+  width: fit-content;
+  margin:  5% auto;
+  padding: 110px;
+  color: variables.$black;
+  background-color: variables.$white-formBG;
+  border-radius: 56px;
+  @include responsive.mobile-only() {
+    width: fit-content;
+    margin: 18% auto;
+    padding: 45px 25px 60px;
+    white-space: nowrap;
+  }
+  @include responsive.tablet-only() {
+    width: fit-content;
+    margin: 10% auto;
+    padding: 110px 50px 55px;
+  }
+}
+.formHeading {
+  padding: 0 0 40px 0;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+  @include responsive.mobile-only() {
+    font-size: 25px;
+  }
+  @include responsive.tablet-only() {
+    font-size: 34px;
+  }
+}

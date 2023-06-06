@@ -1,0 +1,88 @@
+@use 'src/styles/variables';
+@use 'src/styles/theme';
+@use 'src/styles/mixins/responsive';
+
+.shelfList {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.list {
+  overflow: visible !important;
+
+  > div {
+    overflow: visible !important;
+  }
+}
+
+.shelfContainer {
+  position: relative;
+  width: 20%;
+  padding: 12px 10px;
+
+  &.featured {
+    width: 100%;
+    padding: 12px 20%;
+  }
+
+  @include responsive.mobile-only() {
+    width: 50%;
+    padding: 8px 3% 8px variables.$base-spacing;
+
+    &.featured {
+      width: 100%;
+      padding: 24px variables.$base-spacing;
+    }
+  }
+
+  @include responsive.tablet-only() {
+    width: 50%;
+    padding: 0 variables.$base-spacing * 2;
+
+    &.featured {
+      padding: 24px 10%;
+    }
+  }
+}
+
+.shelfContainer1 {
+  position: relative;
+  width: 100%;
+  padding: 12px 73px 1% 42px;
+  border-bottom: 1px solid #3f3f3f;
+  border-radius: 15px;
+
+  @include responsive.mobile-only() {
+    width: 100%;
+    padding: 8px 3% 8px variables.$base-spacing;
+  }
+  @include responsive.tablet-only() {
+    width: 100%;
+    padding: 0 variables.$base-spacing * 2;
+
+    &.featured {
+      padding: 24px 10%;
+    }
+  }
+}
+
+.row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding: 0 2%;
+}
+.live {
+  width: 20%;
+
+  @include responsive.mobile-only() {
+    width: 50%;
+    padding: 8px 3% variables.$base-spacing;
+  }
+  @include responsive.tablet-only() {
+    width: 50%;
+    padding: 0;
+  }
+}

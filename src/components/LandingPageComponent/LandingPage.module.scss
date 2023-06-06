@@ -1,0 +1,10 @@
+@use 'src/styles/variables';
+@use 'src/styles/theme';
+
+.LandingPage {
+  font-family: 'Roboto', Sans-serif !important; // font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  line-height: 156%;
+  background-color: theme.$landing-bg-color;
+}
