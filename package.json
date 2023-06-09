@@ -13,7 +13,7 @@
     "start": "vite",
     "start:test": "vite build --mode test && vite preview --port 8080",
     "build": "vite build",
-    "start:prod": "vite preview --port 8080 --host",
+    "start:prod": "vite preview --port 8081 --host",
     "test": "TZ=UTC LC_ALL=en_US.UTF-8 vitest run",
     "test-watch": "TZ=UTC LC_ALL=en_US.UTF-8 vitest",
     "test-coverage": "TZ=UTC LC_ALL=en_US.UTF-8 vitest run --coverage",
