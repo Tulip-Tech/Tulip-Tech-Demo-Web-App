@@ -1,6 +1,8 @@
 module.exports = {
-  apps : [{
-    name   : "test-app",
-    script : "npm run start:prod"
-  }]
-}
+  apps: [
+    {
+      name: 'test-app',
+      script: 'npm run start:prod',
+    },
+  ],
+};

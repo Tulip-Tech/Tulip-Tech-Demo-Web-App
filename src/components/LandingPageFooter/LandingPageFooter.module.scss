@@ -14,6 +14,7 @@
 
 .footerBody {
   display: flex;
+  align-items: center;
   padding: 215px;
   font-family: 'Roboto', Sans-serif !important; // font-family: 'Roboto';
   font-size: 19px;
@@ -43,9 +44,9 @@
   }
 }
 .policyAndShop {
-  display: grid;
+  display: inline-grid;
   width: 100%;
-  padding: 0 0 125px 0;
+  padding: 150px 0 0 0;
   font-weight: 100 !important;
   font-size: 16px;
   text-align: center;
@@ -75,7 +76,7 @@
   display: grid;
   width: 100%;
   height: min-content;
-  padding: 0 0 125px 0;
+  padding: 165px 0 0 0;
   text-align: center;
   gap: 20px;
   @include responsive.mobile-only() {
