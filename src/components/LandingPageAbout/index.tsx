@@ -34,9 +34,9 @@ const LandingPageAbout: React.FC = () => {
               <li>Compete for the coveted Goal of the Month and Save of the Month awards. </li>
               <li>Elevate your team’s exposure with our exclusive talk shows and podcasts. </li>
             </ul>
-            <Button label={''} to="/p/l94jFS5v" className={styles.watchNowButton}>
+            <a href="https://webapp.gameinframe.com/p/l94jFS5v" className={styles.watchNowButton}>
               WATCH NOW
-            </Button>
+            </a>
           </span>
         </section>
       </div>
