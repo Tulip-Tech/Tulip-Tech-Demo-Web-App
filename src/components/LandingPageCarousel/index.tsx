@@ -34,7 +34,7 @@ const LandingPageCarousel: React.FC = () => {
           >
             <div className={styles.carouselItemDetails}>
               Livestreams, player highlight reels, podcasts and more. You bring the Game, we’ll put it In Frame.{' '}
-              <a href="https://webapp.gameinframe.com/" className={styles.watchNowButton}>
+              <a href="https://player.gameinframe.com" className={styles.watchNowButton}>
                 Watch Now
               </a>
             </div>
