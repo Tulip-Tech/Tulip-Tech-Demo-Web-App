@@ -49,6 +49,7 @@
   }
 }
 .carouselItemDetails {
+  display: grid;
   @include responsive.mobile-only() {
     font-size: 18px;
     line-height: 30px;
@@ -64,8 +65,11 @@
   width: 370px !important;
   height: 110px !important;
   margin: 30px 0 !important;
-  padding: 20px 25px !important;
+  padding: 40px 25px !important;
+  color: variables.$white !important;
   font-size: 32px !important;
+  text-align: center;
+  text-decoration: none;
   background-color: theme.$watch-now !important;
   border: 1px solid variables.$white !important;
   border-radius: 35px;
@@ -73,7 +77,7 @@
     width: 130px !important;
     height: 50px !important;
     margin: 20px 0 0 0 !important;
-    padding: 13px 50px !important;
+    padding: 10px 30px !important;
     font-size: 14px !important;
     white-space: nowrap;
   }
@@ -82,7 +86,7 @@
     width: 200px !important;
     height: 65px !important;
     margin: 15px 0 !important;
-    padding: 13px 50px !important;
+    padding: 25px 50px !important;
     font-size: 18px !important;
     white-space: nowrap;
   }

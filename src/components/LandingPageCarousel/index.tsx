@@ -32,12 +32,11 @@ const LandingPageCarousel: React.FC = () => {
               transition: 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
             }}
           >
-            <div className={styles.carouselItemDetails}>Livestreams, player highlight reels, podcasts and more. You bring the Game, we’ll put it In Frame.</div>
-
-            <div>
-              <Button label={''} to="/home" className={styles.watchNowButton}>
-                WATCH NOW
-              </Button>
+            <div className={styles.carouselItemDetails}>
+              Livestreams, player highlight reels, podcasts and more. You bring the Game, we’ll put it In Frame.{' '}
+              <a href="https://webapp.gameinframe.com/" className={styles.watchNowButton}>
+                Watch Now
+              </a>
             </div>
           </span>
         </section>
