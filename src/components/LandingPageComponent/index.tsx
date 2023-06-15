@@ -36,7 +36,7 @@ const LandingPageComponent: React.FC = () => {
       {isOpen && (
         <div id="popup-container" className={styles.popupContainer} onClick={handleOutsideClick}>
           <div className={styles.popupContent} id="popup-content">
-            <button onClick={closePopup}>Close</button>
+            <button onClick={closePopup}>Close X</button>
             <p>
               Due to scheduled video provider maintenance our Sunday evening games will not air at the following websites instead of gameinframe.com: Brooklyn
               City FC vs Dutch Lions: Eleven, NY Braveheart vs NJ Alliance: Youtube. Head to our{' '}
