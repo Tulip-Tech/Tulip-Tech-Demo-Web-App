@@ -3,6 +3,7 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useMutation } from 'react-query';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import FormPageHeader from '../FormPageHeader';
 import LandingPageFooter from '../LandingPageFooter';
@@ -52,6 +53,9 @@ const playerhighlightsForm: React.FC = () => {
       <div>
         <FormPageHeader />
       </div>
+      <Helmet>
+        <title>GAME IN FRAME - BOOK PLAYER HIGHLIGHTS</title>
+      </Helmet>
       <div className={styles.PlayerHighlightStream}>
         <div className={styles.formContainer}>
           <div className={styles.formHeading}>Book Player Highlights</div>

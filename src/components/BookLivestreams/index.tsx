@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useMutation } from 'react-query';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import FormPageHeader from '../FormPageHeader';
 import LandingPageFooter from '../LandingPageFooter';
@@ -53,6 +54,9 @@ const BookLiveStreamForm: React.FC = () => {
       <div>
         <FormPageHeader />
       </div>
+      <Helmet>
+        <title>GAME IN FRAME - BOOK LIVESTREAM</title>
+      </Helmet>
       <div className={styles.bookLiveStream}>
         <div className={styles.formContainer}>
           <div className={styles.formHeading}>Book Livestream</div>

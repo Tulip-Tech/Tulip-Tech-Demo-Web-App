@@ -13,11 +13,12 @@ const LandingPageFooter: React.FC = () => {
           <a className={styles.link} href="https://shop.gameinframe.com/">
             SHOP
           </a>
-
-          <Link to="/privacy-policy" className={styles.Footerlink}>
+          <a className={styles.link} href="https://player.gameinframe.com/privacy-policy">
             PRIVACY POLICY
-          </Link>
-          <Link to="/terms">TERMS OF USE</Link>
+          </a>
+          <a className={styles.link} href="https://player.gameinframe.com/terms">
+            TERMS OF USE
+          </a>
         </div>
         <div className={styles.footerDetails}>
           <img src="/favicon.ico" width={150}></img>
