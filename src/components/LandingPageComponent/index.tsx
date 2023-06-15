@@ -24,7 +24,7 @@ const LandingPageComponent: React.FC = () => {
 
   timeoutRef.current = window.setTimeout(() => {
     setIsOpen(false);
-  }, 5000);
+  }, 10000);
   const closePopup = () => {
     setIsOpen(false);
     if (timeoutRef.current) {
