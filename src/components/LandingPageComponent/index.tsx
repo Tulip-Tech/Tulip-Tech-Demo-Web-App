@@ -40,10 +40,9 @@ const LandingPageComponent: React.FC = () => {
               Close X
             </button>
             <p>
-              Due to scheduled video provider maintenance our Sunday evening games will not air at the following websites instead of gameinframe.com: Brooklyn
-              City FC vs Dutch Lions: Eleven, NY Braveheart vs NJ Alliance: Youtube. Head to our{' '}
-              <a href="https://www.instagram.com/gameinframe/">Instagram@gameinframe </a>
-              to get direct game links.
+              Due to scheduled maintenance for gameinframe.com's video provider our Sunday evening games will not air on gameinframe.com, instead they will air
+              on the following destinations: Brooklyn City FC vs Dutch Lions: Eleven, NY Braveheart vs NJ Alliance: Youtube. Head to our Instagram{' '}
+              <a href="https://www.instagram.com/gameinframe/">@gameinframe</a> to get direct game links."
             </p>
           </div>
         </div>
