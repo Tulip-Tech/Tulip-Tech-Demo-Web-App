@@ -30,10 +30,10 @@ const BookLiveStreamForm: React.FC = () => {
     fetch('https://micro-content.tulip-tech.com/api/send-email', {
       method: 'POST',
       body: JSON.stringify({
-        key: '',
-        subject: `Creator ${data.name} has submitted resume/plot`,
+        key: 'oaYkkboOC9vezlGDbpvSu7nU658o0Q',
+        subject: `${data.name} has submitted BOOK LIVESTREAM`,
         text: `<p>Creator Email: ${data.email} </p><br/><p>Creator number: ${data.number} </p><br/><p>League: ${data.league} </p><br/>${data.message}`,
-        to: ['gameinframe123.gmail.com'],
+        to: ['jislam@tulip-tech.com'],
       }),
       headers: {
         'Content-Type': 'application/json; charset=utf-8',

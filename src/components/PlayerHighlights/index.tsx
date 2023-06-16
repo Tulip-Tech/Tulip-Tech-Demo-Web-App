@@ -29,10 +29,10 @@ const playerhighlightsForm: React.FC = () => {
     fetch('https://micro-content.tulip-tech.com/api/send-email', {
       method: 'POST',
       body: JSON.stringify({
-        key: '',
-        subject: `Creator ${data.name} has submitted resume/plot`,
+        key: 'BGhc1cEsN2XzETEG8UFVY4Kvq3A1Or',
+        subject: `${data.name} has submitted BOOK PLAYER HIGHLIGHTS`,
         text: `<p>Creator Email: ${data.email} </p><br/><p>Creator Number: ${data.number} </p><br/>${data.message}`,
-        to: ['gameinframe123.gmail.com'],
+        to: ['jislam@tulip-tech.com'],
       }),
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
