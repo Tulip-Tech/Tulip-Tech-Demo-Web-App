@@ -33,7 +33,7 @@ const BookLiveStreamForm: React.FC = () => {
         key: 'oaYkkboOC9vezlGDbpvSu7nU658o0Q',
         subject: `${data.name} has submitted BOOK LIVESTREAM`,
         text: `<p>Creator Email: ${data.email} </p><br/><p>Creator number: ${data.number} </p><br/><p>League: ${data.league} </p><br/>${data.message}`,
-        to: ['jislam@tulip-tech.com'],
+        to: ['info@gameinframe.com', 'josh.pratt@gameinframe.com'],
       }),
       headers: {
         'Content-Type': 'application/json; charset=utf-8',

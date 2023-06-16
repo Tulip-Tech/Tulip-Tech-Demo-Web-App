@@ -32,7 +32,7 @@ const playerhighlightsForm: React.FC = () => {
         key: 'BGhc1cEsN2XzETEG8UFVY4Kvq3A1Or',
         subject: `${data.name} has submitted BOOK PLAYER HIGHLIGHTS`,
         text: `<p>Creator Email: ${data.email} </p><br/><p>Creator Number: ${data.number} </p><br/>${data.message}`,
-        to: ['jislam@tulip-tech.com'],
+        to: ['info@gameinframe.com', 'josh.pratt@gameinframe.com'],
       }),
       headers: {
         'Content-Type': 'application/json; charset=utf-8',
