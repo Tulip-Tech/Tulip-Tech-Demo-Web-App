@@ -11,21 +11,21 @@ import { useConfigStore } from '#src/stores/ConfigStore';
 const LandingPageComponent: React.FC = () => {
   const { config } = useConfigStore(({ config }) => ({ config }));
   const { siteName } = config;
-  const [isOpen, setIsOpen] = useState(true);
-  const timeoutRef = useRef<number | null>(null);
+  // const [isOpen, setIsOpen] = useState(true);
+  // const timeoutRef = useRef<number | null>(null);
 
-  const closePopup = () => {
-    setIsOpen(false);
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  };
+  // const closePopup = () => {
+  //   setIsOpen(false);
+  //   if (timeoutRef.current) {
+  //     clearTimeout(timeoutRef.current);
+  //   }
+  // };
 
-  const handleOutsideClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (event.target instanceof HTMLDivElement && event.target.id === 'popup-container') {
-      closePopup();
-    }
-  };
+  // const handleOutsideClick = (event: React.MouseEvent<HTMLDivElement>) => {
+  //   if (event.target instanceof HTMLDivElement && event.target.id === 'popup-container') {
+  //     closePopup();
+  //   }
+  // };
   return (
     <div className={styles.LandingPage}>
       <Helmet>
@@ -33,7 +33,7 @@ const LandingPageComponent: React.FC = () => {
         <meta property="og:title" content={siteName} />
         <meta name="twitter:title" content={siteName} />
       </Helmet>
-      {isOpen && (
+      {/* {isOpen && (
         <div id="popup-container" className={styles.popupContainer} onClick={handleOutsideClick}>
           <div className={styles.popupContent} id="popup-content">
             <button className={styles.close} onClick={closePopup}>
@@ -46,7 +46,7 @@ const LandingPageComponent: React.FC = () => {
             </p>
           </div>
         </div>
-      )}
+      )} */}
       <LandingPageCarousel />
       <LandingPageAbout />
       <LandingPageFooter />
