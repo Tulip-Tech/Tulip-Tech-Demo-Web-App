@@ -1,1 +1,13 @@
 google.com, pub-5407629793195191, DIRECT, f08c47fec0942fa0
+jwplayer.com, bBVEIa9L, DIRECT, 99ca9a2050fa3047
+themediagrid.com, RSLUXO, DIRECT, 35d5010d7789b49d
+advertising.com, 28814, RESELLER
+appnexus.com, 12564, RESELLER, f5ab79cb980f11d1
+pubmatic.com, 159247, RESELLER, 5d62403b186f2ace
+google.com, pub-5760410923284845, RESELLER, f08c47fec0942fa0
+advertising.com, 28816, RESELLER
+indexexchange.com, 193162, RESELLER
+indexexchange.com, 199932, RESELLER, 50b1c356f2c5c8fc
+onetag.com, 7ac2dc69493a27c, DIRECT
+lijit.com, 418348, DIRECT, fafdf38b16bf6b2b #SOVRN
+sharethrough.com, 1ZSKuSVR, DIRECT, d53b998a7bd4ecd2
