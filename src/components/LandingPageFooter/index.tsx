@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Link from '../Link/Link';
-
 import styles from './LandingPageFooter.module.scss';
 
 const LandingPageFooter: React.FC = () => {
@@ -9,7 +7,10 @@ const LandingPageFooter: React.FC = () => {
     <div className={styles.footer}>
       <div className={styles.footerBody}>
         <div className={styles.policyAndShop}>
-          <div>ABOUT</div>
+
+          <a className={styles.link} href=" https://player.gameinframe.com/AboutUs">
+            ABOUT
+          </a>
           <a className={styles.link} href="https://shop.gameinframe.com/">
             SHOP
           </a>
