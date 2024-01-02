@@ -61,7 +61,7 @@ const LandingPageAbout: React.FC = () => {
           </Carousel> */}
           <div className={styles.videoPlayer}>
             <iframe
-              src="https://content.gameinframe.com/players/s9uO8eeM-e60R1ukp.html"
+              src="https://content.gameinframe.com/players/gGRIm8JO-e60R1ukp.html"
               width="100%"
               height="100%"
               title="Monthly Review Show"
