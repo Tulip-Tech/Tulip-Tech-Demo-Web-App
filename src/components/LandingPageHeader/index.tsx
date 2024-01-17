@@ -13,18 +13,18 @@ const LandingPageHeader: React.FC = () => {
           <img alt="logo" src="/images/landingPageHeaderLogo.png" className={styles.gameInFrameLogo}></img>
         </Link>
       </div>
-      <div className={styles.headerButtonsSection}>
-        <Link to="/book-livestream" className={styles.link}>
-          BOOK LIVESTREAM
-        </Link>
-        <Link to="/book-player-highlights" className={styles.link}>
-          BOOK PLAYER HIGHLIGHTS
-        </Link>
-        <a className={styles.link} href="https://shop.gameinframe.com/">
-          SHOP
-        </a>
-      </div>
-      {/* <div>
+        <div className={styles.headerButtonsSection}>
+            <Link to="/book-livestream" className={styles.link}>
+                BOOK LIVESTREAM
+            </Link>
+            <a className={styles.link} href="https://gameinframe.mfs.gg/QwEb7Oh" >
+                BOOK PLAYER HIGHLIGHTS
+            </a>
+            <a className={styles.link} href="https://shop.gameinframe.com/">
+                SHOP
+            </a>
+        </div>
+        {/* <div>
       <button className={styles.loginbtn}>Log In</button>
     </div> */}
     </div>
