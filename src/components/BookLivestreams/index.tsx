@@ -78,7 +78,7 @@ const BookLiveStreamForm: React.FC = () => {
               {errors.number && <span className={styles.error}>This field is required</span>}
             </div>
             <div className={styles.formGroup}>
-              <label htmlFor="team">TEAM NUMBER</label>
+              <label htmlFor="team">TEAM NAME</label>
               <input type="text" placeholder="YOUR TEAM NAME" id="team" {...register('team', { required: true })} />
               {errors.team && <span className={styles.error}>This field is required</span>}
             </div>
