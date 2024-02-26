@@ -38,6 +38,9 @@
 .footerDetails {
   width: 100%;
   text-align: center;
+  img {
+    margin-bottom: 10px;
+  }
 
   @include responsive.tablet-only() {
     padding: 0 5%;

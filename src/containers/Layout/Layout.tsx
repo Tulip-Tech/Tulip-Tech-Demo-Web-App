@@ -147,11 +147,11 @@ const Layout = () => {
                     <Button className={styles.headerbtn} label={t('Book Livestreams')} to="/book-livestream" color="headerbtn" />
                     <Button label={t('Book Player Highlights')} to="/book-player-highlights" color="headerbtn"></Button>
                     {/* <Button label={t('Shop')} to="/highlights" color="headerbtn"></Button> */}
-                    <button className={styles.headerShopButton}>
+                    {/* <button className={styles.headerShopButton}>
                         <a href="https://shop.gameinframe.com/" className={styles.headerShopButton}>
                             Shop
                         </a>
-                    </button>
+                    </button> */}
                     <hr className={styles.divider} />
                     {renderUserActions()}
                 </Sidebar>

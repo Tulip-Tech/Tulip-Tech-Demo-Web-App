@@ -20,9 +20,9 @@ const FormPageHeader: React.FC = () => {
         <Link to="/book-player-highlights" className={styles.link}>
           BOOK PLAYER HIGHLIGHTS
         </Link>
-        <a className={styles.link} href="https://shop.gameinframe.com/">
+        {/* <a className={styles.link} href="https://shop.gameinframe.com/">
           SHOP
-        </a>
+        </a> */}
       </div>
       {/* <div>
       <button className={styles.loginbtn}>Log In</button>

@@ -7,13 +7,12 @@ const LandingPageFooter: React.FC = () => {
     <div className={styles.footer}>
       <div className={styles.footerBody}>
         <div className={styles.policyAndShop}>
-
           <a className={styles.link} href=" https://player.gameinframe.com/AboutUs">
             ABOUT
           </a>
-          <a className={styles.link} href="https://shop.gameinframe.com/">
+          {/* <a className={styles.link} href="https://shop.gameinframe.com/">
             SHOP
-          </a>
+          </a> */}
           <a className={styles.link} href="https://player.gameinframe.com/privacy-policy">
             PRIVACY POLICY
           </a>
@@ -22,11 +21,11 @@ const LandingPageFooter: React.FC = () => {
           </a>
         </div>
         <div className={styles.footerDetails}>
-          <img src="/favicon.ico" width={150}></img>
-          <div>
+          <img src="/images/landingPageHeaderLogo.png" width={150}></img>
+          <p>
             Your go-to online platform for top-notch Northeast American grassroots soccer. Catch every game and every goal as it happens, right from the comfort
             of your own device.
-          </div>
+          </p>
         </div>
 
         <div className={styles.followUs}>
@@ -36,12 +35,10 @@ const LandingPageFooter: React.FC = () => {
               <img src="/images/facebook.png" height={50}></img>
             </a>
             <a href="https://www.instagram.com/gameinframe/" target="_blank" rel="noopener noreferrer">
-              {' '}
               <img src="/images/instagram.png" height={50}></img>
             </a>
 
             <a href="https://www.youtube.com/channel/UCPWjUHzx2BL28wdUVWpUt4w" target="_blank" rel="noopener noreferrer">
-              {' '}
               <img src="/images/youtube.png" height={50}></img>
             </a>
           </div>
