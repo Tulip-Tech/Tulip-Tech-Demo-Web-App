@@ -40,6 +40,11 @@ const LandingPageCarousel: React.FC = () => {
             </div>
           </span>
         </section>
+        <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '8%' }}>
+          <a href="https://saltathletic.com/" target="_blank" rel="noreferrer">
+            <img className={styles.logo} width={120} height={120} alt="logo" src={'/images/Salt_Logo-18.png'} />
+          </a>
+        </div>
       </div>
     </div>
   );
