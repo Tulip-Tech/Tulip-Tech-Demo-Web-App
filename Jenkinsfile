@@ -59,7 +59,8 @@ pipeline {
             steps {
                 script {
                         def servers = ['10.217.131.23']
-                        deploy (servers)
+			def branch = 'main'
+                        deploy (servers,branch)
                 }
             }
 		}
