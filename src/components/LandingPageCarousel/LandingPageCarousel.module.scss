@@ -7,7 +7,7 @@
   z-index: variables.$view-z-index;
   display: block !important;
   height: 100%;
-  padding: 13% 51% 0% 11%;
+  padding: 13% 51% 14% 11%;
   text-align: left;
   // background: linear-gradient(90deg, #001835 0%, rgba(0, 24, 53, 0) 76.9%);
   @include responsive.mobile-only() {

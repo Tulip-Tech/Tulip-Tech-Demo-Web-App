@@ -1,15 +1,19 @@
+import { useInView } from 'framer-motion';
 import React, { useRef } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { useInView } from 'framer-motion';
 
-import Button from '../Button/Button';
 import LandingPageHeader from '../LandingPageHeader';
 
 import styles from './LandingPageCarousel.module.scss';
 
+import useBreakpoint, { Breakpoint } from '#src/hooks/useBreakpoint';
+
 const LandingPageCarousel: React.FC = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const breakpoint = useBreakpoint();
+
+  const isMobile = breakpoint <= Breakpoint.md;
 
   return (
     <div>
@@ -40,11 +44,14 @@ const LandingPageCarousel: React.FC = () => {
             </div>
           </span>
         </section>
-        <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '8%' }}>
-          <a href="https://saltathletic.com/" target="_blank" rel="noreferrer">
-            <img className={styles.logo} width={120} height={120} alt="logo" src={'/images/Salt_Logo-18.png'} />
-          </a>
-        </div>
+
+        {isMobile && (
+          <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '8%' }}>
+            <a href="https://saltathletic.com/" target="_blank" rel="noreferrer">
+              <img className={styles.logo} width={120} height={120} alt="logo" src={'/images/Salt_Logo-18.png'} />
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
