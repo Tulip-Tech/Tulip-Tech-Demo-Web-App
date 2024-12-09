@@ -5,7 +5,7 @@ def deploy(servers, branch) {
         println "Deploying to ${item} on branch ${branch}."
         sh(script: """
         ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ec2-user@'${item}' bash -c "'
-            ./amar-fe.sh
+            ./jwp-dev.sh
         '"
         """)
     }
