@@ -1,16 +1,13 @@
 #!/usr/bin/env groovy
 
-def deploy (servers) {
-    script {
-        for (item in servers) {
-            println "Deploying to ${item}."
-            sh(script: """
-	    whoami
-            ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ec2-user@'${item}' bash -c "'
-                ./jwp-dev.sh
-            '"
-            """)
-        }
+def deploy(servers, branch) {
+    for (item in servers) {
+        println "Deploying to ${item} on branch ${branch}."
+        sh(script: """
+        ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ec2-user@'${item}' bash -c "'
+            ./amar-fe.sh
+        '"
+        """)
     }
 }
 
